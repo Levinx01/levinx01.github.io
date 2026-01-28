@@ -424,8 +424,45 @@ body {
 .pub-venue {
     font-size: 0.9rem;
     color: var(--text-light);
-    font-style: italic;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.venue-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-style: normal;
+    margin-right: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.venue-badge.preprint {
+    background: linear-gradient(135deg, #6b7280, #4b5563);
+}
+
+.pub-stats {
+    margin-bottom: 0.8rem;
+}
+
+.citation-count {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.citation-count i {
+    margin-right: 0.3rem;
+    color: var(--accent-color);
+}
+
+.pub-note {
+    margin-left: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
 }
 
 .pub-links {
