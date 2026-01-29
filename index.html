@@ -4,122 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haoran Xu</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
+    <div class="page-wrapper">
+        <!-- Header / Profile -->
         <header class="header">
-            <div class="profile">
-                <div class="profile-image">
-                    <i class="fas fa-user"></i>
-                </div>
-                <div class="profile-info">
-                    <h1>Haoran Xu <span class="chinese-name">(徐浩然)</span></h1>
-                    <p class="title">M.S. Student in Electrical Engineering</p>
-                    <p class="affiliation">Zhejiang University</p>
-                    <div class="links">
-                        <a href="https://scholar.google.com/citations?user=rrGz1usAAAAJ" target="_blank">
-                            <i class="fas fa-graduation-cap"></i> Google Scholar
-                        </a>
-                        <a href="https://github.com/Levinx01" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
+            <div class="container">
+                <div class="profile">
+                    <div class="profile-photo">
+                        <img src="assets/profilex.png" alt="Haoran Xu">
+                    </div>
+                    <div class="profile-info">
+                        <h1>Haoran Xu <span class="chinese-name">(徐浩然)</span></h1>
+                        <p class="title">M.S. Student in Electrical Engineering</p>
+                        <p class="affiliation">
+                            <img src="zju-logo.png" alt="ZJU" class="affiliation-logo" onerror="this.style.display='none'">
+                            <a href="https://www.zju.edu.cn/" target="_blank">Zhejiang University</a>
+                        </p>
+                        <div class="social-links">
+                            <a href="https://scholar.google.com/citations?user=rrGz1usAAAAJ" target="_blank" title="Google Scholar">
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                            <a href="https://github.com/Levinx01" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
 
-        <!-- About -->
-        <section class="section">
-            <h2>About</h2>
-            <p>
-                I am a Master's student in Electrical Engineering at <strong>Zhejiang University</strong>.
-                My research focuses on <strong>Embodied Intelligence</strong>, <strong>3D Vision</strong>,
-                and <strong>Multimodal Learning</strong>.
-            </p>
-            <p>
-                Currently, I am a research intern at the <strong>Embodied Intelligence Center</strong> at
-                <strong>Shanghai AI Lab</strong>.
-            </p>
-        </section>
+        <main class="main-content">
+            <div class="container">
+                <!-- About -->
+                <section class="section" id="about">
+                    <h2 class="section-title">About</h2>
+                    <div class="about-text">
+                        <p>
+                            I am a Master's student in Electrical Engineering at <strong>Zhejiang University</strong> (2023-2026, expected).
+                            My research interests include <strong>Embodied Intelligence</strong>, <strong>3D Vision</strong>,
+                            and <strong>Multimodal Learning</strong>.
+                        </p>
+                        <p>
+                            Currently, I am a research intern at the <strong>Embodied Intelligence Center</strong>,
+                            <strong>Shanghai AI Lab</strong>.
+                        </p>
+                    </div>
+                </section>
 
-        <!-- Experience -->
-        <section class="section">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <div class="exp-header">
-                    <strong>Research Intern</strong>
-                    <span class="exp-date">Mar 2025 - Present</span>
-                </div>
-                <div class="exp-org">Shanghai Artificial Intelligence Laboratory</div>
-                <div class="exp-dept">Embodied Intelligence Center</div>
+                <!-- Publications -->
+                <section class="section" id="publications">
+                    <h2 class="section-title">Publications</h2>
+                    <p class="scholar-link">
+                        <a href="https://scholar.google.com/citations?user=rrGz1usAAAAJ" target="_blank">
+                            <i class="fas fa-graduation-cap"></i> Google Scholar
+                        </a>
+                    </p>
+
+                    <div class="pub-list">
+                        <div class="pub-item">
+                            <div class="pub-venue-tag">AAAI 2026</div>
+                            <div class="pub-details">
+                                <h3 class="pub-title">Towards Affordance-Aware Robotic Dexterous Grasping with Human-Like Priors</h3>
+                                <p class="pub-authors">H. Zhao, L. Zhuang, X. Zhao, C. Zeng, <strong>H. Xu</strong>, Y. Jiang, J. Cen, K. Wang, J. Guo, et al.</p>
+                            </div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-venue-tag">AAAI 2025</div>
+                            <div class="pub-details">
+                                <h3 class="pub-title">MVReward: Better Aligning and Evaluating Multi-View Diffusion Models with Human Preferences</h3>
+                                <p class="pub-authors">W. Wang, <strong>H. Xu</strong>, Y. Yang, Z. Liu, J. Meng, H. Wang</p>
+                            </div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-venue-tag">ICASSP 2025</div>
+                            <div class="pub-details">
+                                <h3 class="pub-title">Make Your MoVe: Make Your 3D Contents by Adapting Multi-View Diffusion Models to External Editing</h3>
+                                <p class="pub-authors">W. Wang, <strong>H. Xu</strong>, J. Meng, H. Wang</p>
+                            </div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-venue-tag preprint">arXiv</div>
+                            <div class="pub-details">
+                                <h3 class="pub-title">TeleOpBench: A Simulator-Centric Benchmark for Dual-Arm Dexterous Teleoperation</h3>
+                                <p class="pub-authors">H. Li, Q. Zhao, <strong>H. Xu</strong>, X. Jiang, Q. Ben, F. Jia, H. Zhao, L. Xu, J. Zeng, H. Wang, et al.</p>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2505.12748" target="_blank">[Paper]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-venue-tag preprint">arXiv</div>
+                            <div class="pub-details">
+                                <h3 class="pub-title">Towards Synthesized and Editable Motion In-Betweening Through Part-Wise Phase Representation</h3>
+                                <p class="pub-authors">M. Dai, K. Fan, B. Ji, <strong>H. Xu</strong>, H. Zhao, J. Dong, J. Wang, B. Dai</p>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2503.08180" target="_blank">[Paper]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience -->
+                <section class="section" id="experience">
+                    <h2 class="section-title">Experience</h2>
+
+                    <div class="exp-list">
+                        <div class="exp-item">
+                            <div class="exp-logo">
+                                <img src="shailab-logo.png" alt="Shanghai AI Lab" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%23f0f4f8%22 width=%22100%22 height=%22100%22 rx=%228%22/><text x=%2250%22 y=%2255%22 text-anchor=%22middle%22 fill=%22%23666%22 font-size=%2232%22>AI</text></svg>'">
+                            </div>
+                            <div class="exp-details">
+                                <div class="exp-header">
+                                    <h3>Research Intern</h3>
+                                    <span class="exp-date">Mar 2025 - Present</span>
+                                </div>
+                                <p class="exp-org">Shanghai Artificial Intelligence Laboratory</p>
+                                <p class="exp-dept">Embodied Intelligence Center</p>
+                            </div>
+                        </div>
+
+                        <div class="exp-item">
+                            <div class="exp-logo">
+                                <img src="zju-logo.png" alt="Zhejiang University" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%23f0f4f8%22 width=%22100%22 height=%22100%22 rx=%228%22/><text x=%2250%22 y=%2255%22 text-anchor=%22middle%22 fill=%22%23003d7c%22 font-size=%2228%22>ZJU</text></svg>'">
+                            </div>
+                            <div class="exp-details">
+                                <div class="exp-header">
+                                    <h3>M.S. in Electrical Engineering</h3>
+                                    <span class="exp-date">2023 - 2026 (expected)</span>
+                                </div>
+                                <p class="exp-org">Zhejiang University</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
-
-        <!-- Education -->
-        <section class="section">
-            <h2>Education</h2>
-            <div class="experience-item">
-                <div class="exp-header">
-                    <strong>M.S. in Electrical Engineering</strong>
-                    <span class="exp-date">2023 - 2026 (expected)</span>
-                </div>
-                <div class="exp-org">Zhejiang University</div>
-            </div>
-        </section>
-
-        <!-- Publications -->
-        <section class="section">
-            <h2>Publications</h2>
-            <p class="pub-note">
-                <a href="https://scholar.google.com/citations?user=rrGz1usAAAAJ" target="_blank">
-                    <i class="fas fa-graduation-cap"></i> Full list on Google Scholar
-                </a>
-            </p>
-
-            <ul class="publication-list">
-                <li class="pub-item">
-                    <span class="pub-title">Towards Affordance-Aware Robotic Dexterous Grasping with Human-Like Priors</span>
-                    <span class="pub-authors">H. Zhao, L. Zhuang, X. Zhao, C. Zeng, <strong>H. Xu</strong>, Y. Jiang, J. Cen, K. Wang, J. Guo, et al.</span>
-                    <span class="pub-venue">AAAI 2026</span>
-                </li>
-
-                <li class="pub-item">
-                    <span class="pub-title">MVReward: Better Aligning and Evaluating Multi-View Diffusion Models with Human Preferences</span>
-                    <span class="pub-authors">W. Wang, <strong>H. Xu</strong>, Y. Yang, Z. Liu, J. Meng, H. Wang</span>
-                    <span class="pub-venue">AAAI 2025</span>
-                </li>
-
-                <li class="pub-item">
-                    <span class="pub-title">Make Your MoVe: Make Your 3D Contents by Adapting Multi-View Diffusion Models to External Editing</span>
-                    <span class="pub-authors">W. Wang, <strong>H. Xu</strong>, J. Meng, H. Wang</span>
-                    <span class="pub-venue">IEEE ICASSP 2025</span>
-                </li>
-
-                <li class="pub-item">
-                    <span class="pub-title">TeleOpBench: A Simulator-Centric Benchmark for Dual-Arm Dexterous Teleoperation</span>
-                    <span class="pub-authors">H. Li, Q. Zhao, <strong>H. Xu</strong>, X. Jiang, Q. Ben, F. Jia, H. Zhao, L. Xu, J. Zeng, H. Wang, et al.</span>
-                    <span class="pub-venue">arXiv 2025</span>
-                    <a href="https://arxiv.org/abs/2505.12748" class="pub-link" target="_blank">[Paper]</a>
-                </li>
-
-                <li class="pub-item">
-                    <span class="pub-title">Towards Synthesized and Editable Motion In-Betweening Through Part-Wise Phase Representation</span>
-                    <span class="pub-authors">M. Dai, K. Fan, B. Ji, <strong>H. Xu</strong>, H. Zhao, J. Dong, J. Wang, B. Dai</span>
-                    <span class="pub-venue">arXiv 2025</span>
-                    <a href="https://arxiv.org/abs/2503.08180" class="pub-link" target="_blank">[Paper]</a>
-                </li>
-            </ul>
-        </section>
+        </main>
 
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2025 Haoran Xu</p>
+            <div class="container">
+                <p>&copy; 2025 Haoran Xu</p>
+            </div>
         </footer>
     </div>
 </body>
