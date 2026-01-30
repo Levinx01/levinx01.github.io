@@ -3,8 +3,8 @@
    =================================== */
 
 :root {
-    --primary: #1a56db;
-    --primary-light: #3b82f6;
+    --primary: #60a5fa;
+    --primary-light: #93c5fd;
     --text-dark: #1f2937;
     --text-medium: #4b5563;
     --text-light: #6b7280;
@@ -149,6 +149,17 @@ body {
     border-color: var(--primary);
     color: white;
     transform: translateY(-2px);
+}
+
+/* Links */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+a:hover {
+    color: var(--primary-light);
+    text-decoration: none;
 }
 
 /* ===================================
